@@ -84,3 +84,18 @@ header{
 #btn_login:hover{
     cursor: pointer;
 }
+
+
+.fon_image{
+    width:100%;
+    height:700px;
+    opacity:0.4;
+    position: absolute;
+    top:100px;
+    left:0px;
+}
+
+
+.fon_image img{
+    width:100%;
+}
