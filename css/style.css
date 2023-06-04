@@ -99,3 +99,27 @@ header{
 .fon_image img{
     width:100%;
 }
+
+.info1{
+    width:60%;
+    height:100px;
+    position: absolute;
+    top:180px;
+    left:20%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color:#642D00;
+}
+
+.info2{
+    width:44%;
+    height:100px;
+    position: absolute;
+    top:360px;
+    left:28%;
+    text-align: center;
+    font-size: 35px;
+    line-height:1.6;
+    font-style: italic;
+}
