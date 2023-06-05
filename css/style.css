@@ -149,3 +149,12 @@ header{
 .header_text1 a{
     color:white;
 }
+
+.container{
+    width:50%;
+    height:400px;	
+    position:absolute;
+    top:200px;
+    left:25%;
+    background-color:#642D00;
+ }
