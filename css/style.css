@@ -158,3 +158,15 @@ header{
     left:25%;
     background-color:#642D00;
  }
+
+ .text{
+	width:90%;
+	height:40px;
+	position: absolute;
+	top:0px;
+	left:5%;
+	padding-top:15px;
+	font-size:22px;
+	text-align: center;
+	color:white;
+}
