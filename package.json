@@ -1,0 +1,24 @@
+{
+  "name": "food_diary",
+  "version": "1.0.0",
+  "description": "Creating food_diary using JavaScipt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valentina-2608/Food_diary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valentina-2608/Food_diary/issues"
+  },
+  "homepage": "https://github.com/Valentina-2608/Food_diary#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1390.0",
+    "firebase": "^9.22.1"
+  }
+}
