@@ -406,3 +406,22 @@ input:focus{
     height: 1800px;
     background-color:#FFF8EF;
 }
+
+#btn_sign_out{
+    padding:10px;
+    position: absolute;
+    top:35px;
+    left:83%;
+    border:none;
+    border-radius: 5px;
+    background-color:#FFF8EF;
+    color:black;
+    font-weight: bold;
+}
+
+#btn_sign_out:hover{
+    cursor: pointer;
+}
+
+
+
