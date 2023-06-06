@@ -405,6 +405,8 @@ input:focus{
     width:100%;
     height: 1800px;
     background-color:#FFF8EF;
+    margin:0 auto;
+    position: relative;
 }
 
 #btn_sign_out{
@@ -425,3 +427,13 @@ input:focus{
 
 
 
+.food_text{
+    width:50%;
+    height: 60px;
+    position: absolute;
+    top:150px;
+    left:25%;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
