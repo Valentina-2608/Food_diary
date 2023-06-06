@@ -331,3 +331,34 @@ input:focus{
     height: 800px;
     background-color:#FFF8EF;
 }
+
+
+#form_login{
+	width:90%;
+	height:280px;
+	position: absolute;
+	top:70px;
+	left:5%;
+    background-color:#642D00;
+	border-radius:10px;
+    z-index:10;
+}
+
+
+#btn_log_in{
+	width:20%;
+	padding:5px;
+	margin-left:15%;
+	margin-top:10px;
+    background-color:#FFF8EF;
+	color:black;
+	font-weight: bold;
+	border:none;
+	font-size:18px;
+	border-radius: 8px;
+	float:left;
+}
+
+#btn_log_in:hover{
+	cursor: pointer;
+}
