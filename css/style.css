@@ -379,3 +379,21 @@ input:focus{
 .for_login a{
 	color:darkred;
 }
+
+
+.img2{
+    width:50%;
+    height:500px;
+    position: absolute;
+    top:320px;
+    left:63%;
+    z-index:7;
+}
+
+
+.img2>img{
+    width:60%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
