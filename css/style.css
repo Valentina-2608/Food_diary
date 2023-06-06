@@ -322,3 +322,12 @@ input:focus{
     left:0px;
 }
 
+
+
+/* Log In Page */
+
+.login_main{
+    width:100%;
+    height: 800px;
+    background-color:#FFF8EF;
+}
