@@ -45,10 +45,13 @@ function addMeal(event){
   let choose_btn_parent = choose_btn.parentElement;
   let meal_caption = choose_btn_parent.children[1].innerHTML;
   let meal_calories = choose_btn_parent.children[3].innerHTML;
+  let date = new Date();
+  let meal_date= date.getFullYear() +'-'+(date.getMonth()+1) + '-'+date.getDate();
   const dbRef = collection(db, 'Meals')
     const data = {
         caption: meal_caption,
-        calories:meal_calories
+        calories:meal_calories,
+        date:meal_date
       };
      addDoc(dbRef, data)
     .then(()=>{
