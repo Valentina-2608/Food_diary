@@ -46,12 +46,20 @@ function addMeal(event){
   let meal_caption = choose_btn_parent.children[1].innerHTML;
   let meal_calories = choose_btn_parent.children[3].innerHTML;
   let date = new Date();
-  let meal_date= date.getFullYear() +'-'+(date.getMonth()+1) + '-'+date.getDate();
+  /* let meal_date= date.getFullYear() +'-'+(date.getMonth()+1) + '-'+date.getDate(); */
+
+  function getWeekDay(date) {
+  let days=['Sunday','Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    return days[date.getDay()];
+  }
+
+  let meal_day=getWeekDay(date);
+
   const dbRef = collection(db, 'Meals')
     const data = {
         caption: meal_caption,
         calories:meal_calories,
-        date:meal_date
+        date:meal_day
       };
      addDoc(dbRef, data)
     .then(()=>{
