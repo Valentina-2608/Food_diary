@@ -580,7 +580,7 @@ input:focus{
 /* Meals list */
 .rectangle{
     width:80%;
-    height: 370px;
+    height: 340px;
     background-color:#642D00;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -637,6 +637,7 @@ input:focus{
     position:absolute;
     top:145px;
     left:15%;
+    z-index:7;
 }
 
 .new_meal{
