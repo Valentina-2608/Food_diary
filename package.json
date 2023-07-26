@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Valentina-2608/Food_diary#readme",
   "dependencies": {
     "aws-sdk": "^2.1390.0",
-    "firebase": "^9.22.1"
+    "firebase": "^9.22.1",
+    "livereload-js": "^4.0.1"
   }
 }
