@@ -19,6 +19,7 @@ import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/fi
     appId: "1:684247554950:web:868a5d64e83a19c2b9aa07"
   };
 
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const db = getFirestore();
@@ -27,13 +28,14 @@ import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/fi
   let list_food = document.querySelector('.list_food');
   let show_meals = document.getElementById('show_meals');
   show_meals.addEventListener('click', showAllMeals);
-
+  
   function showAllMeals(){
   onSnapshot(dbRef, docsSnap => {
     docsSnap.forEach(doc => {
       console.log(doc.data().caption);
       console.log(doc.data().calories);
       console.log(doc.data().date)
+  
       let new_meal = document.createElement('div');
       new_meal.classList.add('new_meal')
 
@@ -47,7 +49,7 @@ import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/fi
 
       let new_meal_date = document.createElement('div');
       new_meal_date.classList.add('new_meal_date')
-      new_meal_date.innerHTML = doc.data().date;
+      new_meal_date.innerHTML = doc.data().date
       
       new_meal.appendChild(new_meal_caption);
       new_meal.appendChild(new_meal_calories);
