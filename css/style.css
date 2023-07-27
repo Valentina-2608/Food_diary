@@ -742,6 +742,23 @@ input:focus{
     text-align: center;
 }
 
+
+#show_calories{
+    padding:10px;
+    position: absolute;
+    top:10px;
+    left:65%;
+    border:none;
+    border-radius: 5px;
+    background-color:#3D251B;
+    color:#D0BCA8;
+    font-weight: bold;
+}
+
+
+#show_calories:hover{
+    cursor: pointer;
+}
 .result_calories{
     width:50%;
     height:50px;
