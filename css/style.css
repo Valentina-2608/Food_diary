@@ -794,6 +794,7 @@ input:focus{
     position: absolute;
     top:80px;
     left:10%;
+    background-color: aqua;
 }
 
 .img3{
@@ -806,4 +807,15 @@ input:focus{
 
 .img3 img{
     width:100%;
+}
+
+
+.list_calories{
+    width:90%;
+    height:20px;
+    position:absolute;
+    top:65px;
+    left:5%;
+    z-index:7;
+    background-color:#642D00;
 }
