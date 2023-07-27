@@ -790,11 +790,10 @@ input:focus{
 
 .result{
     width:80%;
-    height: 370px;
+    height: 450px;
     position: absolute;
     top:80px;
     left:10%;
-    background-color: aqua;
 }
 
 .img3{
