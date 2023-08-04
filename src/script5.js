@@ -59,9 +59,84 @@ import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/fi
 
       setTimeout(()=>{
         location.reload()
-      },10000)
+      },20000)
     })
 
   })
  
   }
+
+
+
+
+  let list_calories= document.querySelector('.list_calories');
+  let show_calories = document.getElementById('show_calories');
+  show_calories.addEventListener('click', showCalories);
+
+  function showCalories(){
+  let new_meals_date=document.querySelectorAll('.new_meal_date');
+  let s1=0;
+  let s2=0;
+  let s3=0;
+  let s4=0;
+  let s5=0;
+  let s6=0;
+  let s7=0;
+  for(let elem of new_meals_date){
+    let date_parent=elem.parentElement;
+    let new_meal_calories=date_parent.children[1].innerHTML;
+    if (elem.innerHTML==='Monday'){
+      s1=s1+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Tuesday'){
+      s2=s2+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Wednesday'){
+      s3=s3+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Thursday'){
+      s4=s4+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Friday'){
+      s5=s5+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Saturday'){
+      s6=s6+Number(new_meal_calories);
+    }
+    else if (elem.innerHTML==='Sunday'){
+      s7=s7+Number(new_meal_calories);
+    }
+  
+    }
+
+    let elem_monday=list_calories.children[0];
+    elem_monday.children[0].innerHTML=s1;
+
+    let elem_tuesday=list_calories.children[1];
+    elem_tuesday.children[0].innerHTML=s2;
+
+    let elem_wednesday=list_calories.children[2];
+    elem_wednesday.children[0].innerHTML=s3;
+
+    let elem_thursday=list_calories.children[3];
+    elem_thursday.children[0].innerHTML=s4;
+
+    let elem_friday=list_calories.children[4];
+    elem_friday.children[0].innerHTML=s5;
+
+    let elem_saturday=list_calories.children[5];
+    elem_saturday.children[0].innerHTML=s6;
+
+    let elem_sunday=list_calories.children[6];
+    elem_sunday.children[0].innerHTML=s7;
+
+  
+    }
+   
+
+
+ 
+  
+
+ 
+  
